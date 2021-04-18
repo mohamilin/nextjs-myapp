@@ -32,3 +32,42 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Dokumentasi
+1. Extrak file setup-next.js kemudian lakukan npm i 
+2. Selanjutnya kita akan membuat file yang telah di ekstrak berjalan sebagaimana mestinya.
+
+### Buat halaman pertama
+3. Tambah file index.js didalam folder pages, kemudian kita dapat menjalankan <h5> npm run dev. </h5>. untuk nama file index.js adalah nama spesial yang digunakan dalam akses pertama ke aplikasi. 
+    - index.js
+    ```js
+    export default function HomePage() {
+        return (
+            <div>
+                <h1>The HomePage</h1>
+            </div>
+        )
+    }
+    ```
+
+4. Selanjutnya, kita bisa membuat file lagi dalam folder pages, dengan nama profile.js, dan contact.js
+    - profile.js
+    ```js
+    export default function profile() {
+    return (
+        <div>
+            <h3>Halaman profile</h3>
+        </div>
+      )
+    }
+    ```
+    - contact.js
+    ```js
+    export default function contact() {
+        return (
+            <div>
+                <h3>Halaman Kontak</h3>
+            </div>
+        )
+    }
+    ```
